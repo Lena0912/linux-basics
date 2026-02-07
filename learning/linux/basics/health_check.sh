@@ -1,16 +1,15 @@
 #!/bin/bash
-echo "=== СИСТЕМНИЙ ЗВІТ ДЛЯ OLENA ==="
+echo "=== SYSTEM HEALTH REPORT ==="
 date
-echo "--- Користувач: $USER ---"
+echo "--- User: $USER ---"
 
-echo "1. Вільне місце на диску:"
+echo "1. Disk Space Usage:"
 df -h | grep "/$"
 
-echo "2. Оперативна пам'ять
- (MB):"
+echo "2. Memory Usage (MB):"
 free -m | grep "Mem"
 
-echo "3. Статус мережі:"
-ping -c 1 google.com > /dev/null && echo "Інтернет: ПРАЦЮЄ" || echo "Інтернет: ПОМИЛКА"
+echo "3. Network Status:"
+ping -c 1 google.com > /dev/null && echo "Internet: CONNECTED" || echo "Internet: DISCONNECTED"
 
-echo "=== КІНЕЦЬ ЗВІТУ ==="
+echo "=== END OF REPORT ==="
