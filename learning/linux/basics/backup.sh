@@ -1,26 +1,28 @@
 #!/bin/bash
 
-# Configuration
-TIMESTAMP=$(date +%Y-%m-%d_%H-%M)
+# --- Configuration ---
 SOURCE_DIR="/home/olena/learning/linux/basics/config_backup"
 BACKUP_DIR="/home/olena/learning/linux/basics"
+TIMESTAMP=$(date +%Y-%m-%d_%H-%M)
 FILENAME="full_backup_$TIMESTAMP.tar.gz"
 RETENTION_DAYS=7
 
-echo "📦 Starting backup of: $SOURCE_DIR"
-
-# Create compressed archive
-tar -czf "$BACKUP_DIR/$FILENAME" "$SOURCE_DIR"
-
-# Check if backup was successful
-if [ $? -eq 0 ]; then
-    echo "✅ Success: Backup created at $BACKUP_DIR/$FILENAME"
+# --- Step 1: Logic Check (Module 23) ---
+# Check if source directory exists
+if [ -d "$SOURCE_DIR" ]; then
+    echo "✅ Directory $SOURCE_DIR exists. Starting backup..."
     
-    # HOUSEKEEPING: Remove backups older than 7 days
-    echo "🧹 Cleaning up old backups (older than $RETENTION_DAYS days)..."
+    # --- Step 2: Archiving ---
+    tar -czf "$BACKUP_DIR/$FILENAME" "$SOURCE_DIR"
+    echo "✅ Archive created: $FILENAME"
+
+    # --- Step 3: Smart Cleanup (Module 22) ---
+    echo "🧹 Searching for backups older than $RETENTION_DAYS days..."
     find "$BACKUP_DIR" -name "full_backup_*.tar.gz" -mtime +$RETENTION_DAYS -delete
-    echo "✨ Cleanup complete."
+    echo "✨ Cleanup finished."
+
 else
-    echo "❌ Error: Backup failed!"
+    # If directory is missing
+    echo "❌ Error: Source directory $SOURCE_DIR not found!"
     exit 1
 fi
