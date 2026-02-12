@@ -10,6 +10,8 @@ The core of this repository is a Bash script (`health_check.sh`) designed to aut
 * **Memory Analysis**: Reports real-time RAM usage in Megabytes.
 * **Network Connectivity**: Automatically pings external services (Google) to verify internet access.
 * **Timestamping**: Every report is generated with a precise system date and time.
+* Automated Backup & Retention: A dedicated script (backup.sh) that creates compressed archives and automatically deletes files older than 7 days to manage disk space.
+* Error Handling & Validation: Scripts now include logic to verify directory existence and handle potential execution errors using if/else statements. 
 
 ## 🧠 Skills Acquired
 During this module, I have mastered the following concepts:
@@ -19,6 +21,11 @@ During this module, I have mastered the following concepts:
 * **Resource Troubleshooting**: Monitoring system health with `df -h`, `free -m`, and `neofetch`.
 * **Networking Basics**: Diagnosing connectivity using `ifconfig` and `ping`.
 * **Version Control**: Managing code lifecycle with Git and GitHub.
+* Scripting Logic: Implementing conditional statements (if/then/else) and exit codes for robust automation.
+* Data Lifecycle Management: Using the find utility with -mtime parameters to implement data retention policies.
+* Advanced Git Workflow: Managing remote synchronization, resolving merge conflicts, and maintaining a clean commit history.
+
+
   🕒 Automation & Backup Systems
 Cron Scheduling: Mastered the crontab syntax (m h dom mon dow command) to schedule recurring system tasks.
 
