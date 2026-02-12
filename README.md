@@ -19,4 +19,10 @@ During this module, I have mastered the following concepts:
 * **Resource Troubleshooting**: Monitoring system health with `df -h`, `free -m`, and `neofetch`.
 * **Networking Basics**: Diagnosing connectivity using `ifconfig` and `ping`.
 * **Version Control**: Managing code lifecycle with Git and GitHub.
+  🕒 Automation & Backup Systems
+Cron Scheduling: Mastered the crontab syntax (m h dom mon dow command) to schedule recurring system tasks.
+
+Bash Scripting: Developed a robust backup script utilizing variables and command substitution.
+
+Data Compression: Integrated the tar utility with gzip compression (-czf) to optimize storage and manage backups efficiently.
 
