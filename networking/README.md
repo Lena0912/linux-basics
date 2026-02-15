@@ -48,41 +48,16 @@ The "Magic Number" Rule: To find the increment (step) of a subnet, subtract the 
 
 🤝 Transport Protocols: TCP vs UDP
 
-Feature
+Feature                      TCP                                   UDP 
+Full Name               Transmission Control Protocol      User Datagram Protocol
 
-TCP
+Reliability             High (Guaranteed delivery)         Low (Best-effort)
 
-UDP
+Speed                   Slower (Overhead)                  Faster (Low latency)
 
-Full Name
+Handshake               Yes (SYN, SYN-ACK, ACK)            No
 
-Transmission Control Protocol
-
-User Datagram Protocol
-
-Reliability
-
-High (Guaranteed delivery)
-
-Low (Best-effort)
-
-Speed
-
-Slower (Overhead)
-
-Faster (Low latency)
-
-Handshake
-
-Yes (SYN, SYN-ACK, ACK)
-
-No
-
-Use Cases
-
-Web browsing (HTTP), Email
-
-Video streaming, Online games
+Use Cases               Web browsing (HTTP), Email         Video streaming, Online games
 
 🛠️ Practical Tools & Commands
 
