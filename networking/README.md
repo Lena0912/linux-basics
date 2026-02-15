@@ -5,6 +5,17 @@ This module covers the core concepts of computer networking, focusing on the OSI
 🏗️ The OSI Model
 
 The OSI (Open Systems Interconnection) model is a conceptual framework used to understand how data moves across a network.
+🚦 Quick OSI Cheat Sheet (The Real World)
+
+Level             Name           Key Concept                   Analogy
+
+L4              Transport         TCP/UDP           Courier: Does it need a signature (TCP) or just drop-off (UDP)?
+
+L3              Network           IP Address        Global Address: Which city and street is the packet going to?
+
+L2              Data Link         MAC Address       Next Door: How to get the packet to the very next device in the room.
+
+L1              Physical          Cables/Waves      The Road: Are the wires plugged in? Is the Wi-Fi on?
 
 Layer 3: Network Layer
 
