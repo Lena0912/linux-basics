@@ -1,0 +1,2 @@
+ls, cd, pwd, cp, mv, rm, tail, grep
+My goal: Cloud_Support_Engeneer

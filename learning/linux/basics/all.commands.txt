@@ -1,0 +1,17 @@
+total 52
+drwxr-x--- 8 olena olena 4096 Feb  1 22:03 .
+drwxr-xr-x 3 root  root  4096 Feb  1 20:23 ..
+-rw------- 1 olena olena   84 Feb  1 21:34 .bash_history
+-rw-r--r-- 1 olena olena  220 Feb  1 20:23 .bash_logout
+-rw-r--r-- 1 olena olena 3771 Feb  1 20:23 .bashrc
+drwx------ 2 olena olena 4096 Feb  1 20:24 .cache
+drwxr-x--x 3 olena olena 4096 Feb  1 21:07 .config
+drwxr-xr-x 7 olena olena 4096 Feb  1 21:12 .git
+-rw-r--r-- 1 olena olena  241 Feb  1 21:07 .gitconfig
+drwxr-xr-x 3 olena olena 4096 Feb  1 20:37 .local
+-rw-rw-r-- 1 olena olena    0 Feb  1 20:24 .motd_shown
+-rw-r--r-- 1 olena olena  807 Feb  1 20:23 .profile
+-rw-r--r-- 1 olena olena    0 Feb  1 20:26 .sudo_as_admin_successful
+drwxr-xr-x 3 olena olena 4096 Feb  1 21:42 cloud_labs
+drwxr-xr-x 3 olena olena 4096 Feb  1 22:03 learning
+Learning in progress
